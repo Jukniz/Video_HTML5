@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+         <script type="application/javascript" src="./index.js"></script>
+    </head>
+<body><center>
+    Reproductor MP4 en HTML5 By Jukniz.
+    Selecciona el archivo que quieres reproducir.
+    <br>    
+    <input id="input" type="file" accept="video/mp4" onchange="loadvideo()" />
+<br>
+<video id="video" width="800" height="600" controls>
+  <source id="source" src="" type="video/mp4">
+  Your browser does not support the video tag and mp4.
+</video>
+<br>
+  <button onclick="setVideoSize(600, 400)">Small 600*400</button>
+  <button onclick="setVideoSize(800, 600)">Normal 800*600</button>
+  <button onclick="setVideoSize(1280, 800)">Big 1280x800</button>
+</center>
+</body>
+</html>
